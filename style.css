@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+
+.heroSection{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        background-color:  #5F8E62;
+        color: white;
+        gap: 10px;
+        text-align: center;
+        padding: 20px;
+        height: 100vh;
+       }
+
+     span{
+        color: red;
+     }
+
+     #register{
+        color: red;
+     }
+
+
+p{
+    margin:10px
+}
+
+.heroSection h1{
+    font-size: 60px;
+
+}
+
+/* about section */
+
+.about-section{
+    padding: 10px;
+
+}
+.about-section a {
+color: black;
+    border: 2px solid blue;
+}
+.image-section{
+    width: 50%;
+    height: 350px;
+    border-radius: .4rem;
+}
+.image-section img{
+    width:100%;
+    height: 100%;
+  
+}
+
+.about-tag{
+    display: flex;
+    gap: 10px;
+}
+
+.text-section{
+    width: 50%;
+}
+
+.about-section h3, .p-tag{
+text-align: center;
+}
+
+.about-section h3{
+    font-size: 40px;
+}
+
+.p-tag{
+    font-size: 20px;
+}
+
+.text-section h4 {
+font-size: 35px;
+}
+
+.text-section p{
+    font-size: 20px;
+}
