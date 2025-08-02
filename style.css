@@ -93,3 +93,37 @@ font-size: 35px;
     display: none;
 }
 
+#loader{
+padding: 10px;
+display: none;
+}
+
+.loader span{
+    display: block;
+    margin: 10px auto;
+    width: 100px;
+    height: 100px;
+    border-radius: 100%;
+    animation: loader 4s linear infinite;
+}
+
+@keyframes loader{
+
+    25%{
+        border-top: 10px solid red;
+    }
+   
+    50%{
+        border-right: 10px solid orange;
+
+    }
+
+    75%{
+        border-bottom: 10px solid green ;
+    }
+
+    100%{
+        border-left: 10px solid blue
+    }
+
+}
