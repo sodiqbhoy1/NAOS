@@ -84,8 +84,9 @@ function submitButton(event) {
       });
   }
 }
+ 
 
-// fetch users
+// fetch users from the backend
 function showUsers() {
   // Ask the server for the list of users
   fetch("https://naosbackend.onrender.com/user/all-users")
