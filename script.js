@@ -96,7 +96,7 @@ function showUsers() {
       // Fixed: Updated to match the actual backend response structure
       if (data.success && data.users && data.users.length > 0) {
         // For each user, show their info
-        data.users.forEach((user) => {
+        data.users.forEach((user,index) => {
           const name = user.fullname || user.name || "No Name";
           const email = user.email || "No Email";
           const phone = user.phone || "No Phone";
@@ -104,13 +104,17 @@ function showUsers() {
           const address = user.address || "No Address";
 
           usersTab.innerHTML += `
-                        <div style="border: 1px solid #ddd; padding: 15px; margin: 10px 0; border-radius: 8px; background-color: #f9f9f9;">
-                            <h4 style="margin: 0 0 10px 0; color: #005B8F;">${name}</h4>
-                            <p style="margin: 5px 0;"><strong>Email:</strong> ${email}</p>
-                            <p style="margin: 5px 0;"><strong>Phone:</strong> ${phone}</p>
-                            <p style="margin: 5px 0;"><strong>Gender:</strong> ${gender}</p>
-                            <p style="margin: 5px 0;"><strong>Address:</strong> ${address}</p>
-                        </div>
+
+          <tr>
+          <th> ${index + 1} </th>
+          <td> ${name} </td>
+          <td> ${email} </td>
+          <td> ${phone} </td>
+          <td> ${gender} </td>
+          <td> ${address} </td>
+          
+          </tr>
+         
                     `;
         });
       } else {
