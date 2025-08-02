@@ -104,8 +104,7 @@ function showUsers() {
           const address = user.address || "No Address";
 
           usersTab.innerHTML += `
-
-          <tr>
+          
           <th> ${index + 1} </th>
           <td> ${name} </td>
           <td> ${email} </td>
@@ -113,7 +112,6 @@ function showUsers() {
           <td> ${gender} </td>
           <td> ${address} </td>
           
-          </tr>
          
                     `;
         });
@@ -138,4 +136,3 @@ function showUsers() {
 // Call the function to fetch users when the page loads
 showUsers();
 
-// https://naosbackend.onrender.com
