@@ -104,14 +104,14 @@ function showUsers() {
           const address = user.address || "No Address";
 
           usersTab.innerHTML += `
-          
+          <tr>
           <th> ${index + 1} </th>
           <td> ${name} </td>
           <td> ${email} </td>
           <td> ${phone} </td>
           <td> ${gender} </td>
           <td> ${address} </td>
-          
+          </tr>
          
                     `;
         });
