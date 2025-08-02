@@ -119,9 +119,9 @@ function showUsers() {
         });
       } else {
         usersTab.innerHTML = `
-                    <div style="text-align: center; padding: 20px; color: #666;">
-                        <p>No TechRise Oyo participants found yet.</p>
-                    </div>
+        <tr> 
+        <td style="text-align: center;"> No TechRise Oyo participants found yet. </td>
+        </tr>
                 `;
       }
     })
